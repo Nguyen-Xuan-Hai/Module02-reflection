@@ -25,6 +25,7 @@
             echo "<h2><span style='color:red'>Bạn đã nhập sai thông tin</span></h2>";
         }
     }
+
     ?>
 </form>
 </body>
