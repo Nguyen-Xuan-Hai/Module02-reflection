@@ -1,6 +1,31 @@
 # Module02-reflection
 BTVN 26/01 Login file: Login.php,Login_welcome
 ***
+Ngày 28/01 <br>
+Bài 4 - Reflection<br>
+<dl>
+    <dt>-Namespace (tên miền không gian) là một hình thức để đóng gói các hạng mục có liên quan lại với nhau</dt>
+    <dt>-Trong PHP, namespace được thiết kế để giải quyết 2 vấn đề mà các tách giả của các thư viện và ứng dụng thường gặp phải khi cố gắng tạo ra các đối tượng hoặc hàm có thể tái sử dụng được.</dt>
+    <dd>+Các tên gọi bị trùng nhau giữa những lớp/hàm được tạo ra, so với các lớp/hàm có sẵn của PHP, hoặc các lớp/hàm do một người khác viết.</dd>
+    <dd>Khả năng để rút ngắn tên gọi thông qua việc đặt các bí danh (alias) nhằm giữ cho mã nguồn ngắn gọn</dd>
+    </dl><br>
+    <dl>PHP cũng là một ngôn ngữ lập trình nên nó cũng có cung cấp các thư viện xử lý JSON giúp lập trình viên giải quyết nó dễ dàng. Chúng ta có hai hàm đó là hàm json_decode và json_encode:
+    <dt>json_decode: Hàm này mục đích chuyển một chuỗi JSON sang dạng mảng hoặc object,hàm này có cú pháp như sau: json_decode($json_string, $assoc)</dt>
+    <dd>$json_string: là chuỗi JSON</dd>
+    <dd>$assoc có hai giá trị true / false. Nếu true thì kết quả nó trả về là dạng  array, ngược lại nếu false thì kết quả trả về dạng object. Mặc định là false.</dd>
+    <dt>json_encode: Hàm sẽ chuyển một mảng trong PHP hoặc object trong PHP thành chuỗi JSON.</dt>
+    </dl>
+    <br>
+   <dl>-Cách dùng Composer : Autoload (Tránh cho việc phải dùng nhiều lần câu lệnh include hay require trong một tập kỹ thuật clean code)
+    <dt>VD:require __DIR__ . '/vendor/autoload.php';</dt>
+    <dd>{<br>
+    "autoload": {<br>
+        "psr-4": {"Acme\\": "src/"}<br>
+    }<br>
+}</dd>
+</dl>
+    
+***
 Ngày 27/01<br>
 Bài 3 – Reflection<br>
 <dl>
