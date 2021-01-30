@@ -3,8 +3,8 @@ BTVN 26/01 Login file: Login.php,Login_welcome
 ***
 Ngày 29/01/2021<br>
 Bài 5 - Reflection <br>
-<dl>Từ khóa final
-  <dt>Final là không cho phép phương thức đó bị ghi đè, nghĩa là chỉ cần ở lớp cha có từ khóa final là lớp đó sẽ không được kế thừa và ghi đè.</dt>
+<dl>-Từ khóa final
+  <dt>-Final là không cho phép phương thức đó bị ghi đè, nghĩa là chỉ cần ở lớp cha có từ khóa final là lớp đó sẽ không được kế thừa và ghi đè.</dt>
     <dd>class ConNguoi<br>
 {
     private $soChan = 2;<br>
@@ -27,31 +27,31 @@ class NguoiLon extends ConNguoi<br>
 </dl><br>
 <dl>Sự khác nhau giữa Overried và Overload
 <dt>Override</dt>
-  <dd>Thay đổi hành vi hiện tại của phương thức.</dd>
-  <dd>Thể hiện tính đa hình tại run time.</dd>
-  <dd>Danh sách tham số phải giống nhau.</dd>
-  <dd>Phương thức ghi đè ở lớp con phải có quyền truy cập bằng hoặc lớn hơn phương thức được ghi đè ở lớp cha.</dd>
-  <dd>Kiểu trả về bắt buộc phải giống nhau.</dd>
-  <dd>Xảy ra giữa 2 class có quan hệ kế thừa</dd>
+  <dd>-Thay đổi hành vi hiện tại của phương thức.</dd>
+  <dd>-Thể hiện tính đa hình tại run time.</dd>
+  <dd>-Danh sách tham số phải giống nhau.</dd>
+  <dd>-Phương thức ghi đè ở lớp con phải có quyền truy cập bằng hoặc lớn hơn phương thức được ghi đè ở lớp cha.</dd>
+  <dd>-Kiểu trả về bắt buộc phải giống nhau.</dd>
+  <dd>-Xảy ra giữa 2 class có quan hệ kế thừa</dd>
   <dt>Overload</dt>
-  <dd>Thêm hoặc mở rộng cho hành vi của phương thức.</dd>
-  <dd>Thể hiện tính đa hình tại compile time.</dd>
-  <dd>Danh sách tham số có thể khác nhau.</dd>
-  <dd>Các phương thức nạp chồng có thể có quyền truy cập khác nhau.</dd>
-  <dd>Kiểu trả về có thể khác nhau.</dd>
-  <dd>Xảy ra trong phạm vi cùng 1 class.</dd>
+  <dd>-Thêm hoặc mở rộng cho hành vi của phương thức.</dd>
+  <dd>-Thể hiện tính đa hình tại compile time.</dd>
+  <dd>-Danh sách tham số có thể khác nhau.</dd>
+  <dd>-Các phương thức nạp chồng có thể có quyền truy cập khác nhau.</dd>
+  <dd>-Kiểu trả về có thể khác nhau.</dd>
+  <dd>-Xảy ra trong phạm vi cùng 1 class.</dd>
 </dl>
 <dl>Constructor
-  <dt>là một phương thức đặc biệt, được thực thi ngay khi tạo ra đối tượng. Nó thường được sử dụng để khởi tạo các chức năng như gán thuộc tính với giá trị hay tạo ra các đối tượng khác từ đối tượng vừa tạo.</dt>
+  <dt>+là một phương thức đặc biệt, được thực thi ngay khi tạo ra đối tượng. Nó thường được sử dụng để khởi tạo các chức năng như gán thuộc tính với giá trị hay tạo ra các đối tượng khác từ đối tượng vừa tạo.</dt>
   <dd>VD: class demo<br>
 {
     function __construct()<br>
     {
     }<br>
 }</dd>
-  <dt>PHP không cho phép nhiều construct trong 1 class.</dt>
-  <dd>Khi nào thì lớp cha không cho phép lớp con kế thừa các thuộc tính và phương thức.</dd>
-  <dt>-Khi lớp cha khai báo mức độ truy xuất là private</dt>
+  <dt>-PHP không cho phép nhiều construct trong 1 class.</dt>
+  <dt>-Khi nào thì lớp cha không cho phép lớp con kế thừa các thuộc tính và phương thức.</dt>
+  <dd>+Khi lớp cha khai báo mức độ truy xuất là private</dd>
 </dl>
 ***
 Ngày 28/01/2021 <br>
