@@ -41,7 +41,7 @@ class NguoiLon extends ConNguoi<br>
   <dd>-Kiểu trả về có thể khác nhau.</dd>
   <dd>-Xảy ra trong phạm vi cùng 1 class.</dd>
 </dl>
-<dl><strong>Constructor</str
+<dl><strong>Constructor</strong>
   <dt>+là một phương thức đặc biệt, được thực thi ngay khi tạo ra đối tượng. Nó thường được sử dụng để khởi tạo các chức năng như gán thuộc tính với giá trị hay tạo ra các đối tượng khác từ đối tượng vừa tạo.</dt>
   <dd>VD: class demo<br>
 {
