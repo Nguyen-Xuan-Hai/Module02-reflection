@@ -1,13 +1,38 @@
 # Module02-reflection
 BTVN 26/01 Login file: Login.php,Login_welcome
 ***
-Ngày 28/01 <br>
+Ngày 29/01/2021<br>
+Bài 5 - Reflection <br>
+<dl>Từ khóa final
+  <dt>Final là không cho phép phương thức đó bị ghi đè, nghĩa là chỉ cần ở lớp cha có từ khóa final là lớp đó sẽ không được kế thừa và ghi đè.</dt>
+    <dd>class ConNguoi<br>
+{
+    private $soChan = 2;<br>
+
+   final public function getSoChan()<br>
+    {
+        return $this->soChan;<br>
+    }
+}
+<br>
+//Sai vì không thể override lại final phương thức
+class NguoiLon extends ConNguoi<br>
+{<br>
+    public function getSoChan()
+    {<br>
+
+    }<br>
+}
+//Fatal error: Cannot override final method ConNguoi::getSoChan()<dd>
+</dl>
+***
+Ngày 28/01/2021 <br>
 Bài 4 - Reflection<br>
 <dl>
     <dt>-Namespace (tên miền không gian) là một hình thức để đóng gói các hạng mục có liên quan lại với nhau</dt>
-    <dt>-Trong PHP, namespace được thiết kế để giải quyết 2 vấn đề mà các tách giả của các thư viện và ứng dụng thường gặp phải khi cố gắng tạo ra các đối tượng hoặc hàm có thể tái sử dụng được.</dt>
+    <dt>-Trong PHP, namespace được thiết kế để giải quyết 2 vấn đề mà các tác giả của các thư viện và ứng dụng thường gặp phải khi cố gắng tạo ra các đối tượng hoặc hàm có thể tái sử dụng được.</dt>
     <dd>+Các tên gọi bị trùng nhau giữa những lớp/hàm được tạo ra, so với các lớp/hàm có sẵn của PHP, hoặc các lớp/hàm do một người khác viết.</dd>
-    <dd>Khả năng để rút ngắn tên gọi thông qua việc đặt các bí danh (alias) nhằm giữ cho mã nguồn ngắn gọn</dd>
+    <dd>+Khả năng để rút ngắn tên gọi thông qua việc đặt các bí danh (alias) nhằm giữ cho mã nguồn ngắn gọn</dd>
     </dl><br>
     <dl>PHP cũng là một ngôn ngữ lập trình nên nó cũng có cung cấp các thư viện xử lý JSON giúp lập trình viên giải quyết nó dễ dàng. Chúng ta có hai hàm đó là hàm json_decode và json_encode:
     <dt>json_decode: Hàm này mục đích chuyển một chuỗi JSON sang dạng mảng hoặc object,hàm này có cú pháp như sau: json_decode($json_string, $assoc)</dt>
@@ -26,7 +51,7 @@ Bài 4 - Reflection<br>
 </dl>
     
 ***
-Ngày 27/01<br>
+Ngày 27/01/2021<br>
 Bài 3 – Reflection<br>
 <dl>
 -OOP xoay quanh khái niệm Lớp – class. Lớp là bản thiết kế hay bản mẫu\khuôn mẫu được sử dụng để tạo các đối tượng.<br>
