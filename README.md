@@ -3,7 +3,7 @@ BTVN 26/01 Login file: Login.php,Login_welcome
 ***
 Ngày 29/01/2021<br>
 Bài 5 - Reflection <br>
-<dl>-Từ khóa final
+<dl>-<strong>Từ khóa final</strong>
   <dt>-Final là không cho phép phương thức đó bị ghi đè, nghĩa là chỉ cần ở lớp cha có từ khóa final là lớp đó sẽ không được kế thừa và ghi đè.</dt>
     <dd>class ConNguoi<br>
 {
@@ -25,7 +25,7 @@ class NguoiLon extends ConNguoi<br>
 }<br>
 //Fatal error: Cannot override final method ConNguoi::getSoChan()<dd>
 </dl><br>
-<dl>Sự khác nhau giữa Overried và Overload
+<dl><strong>Sự khác nhau giữa Overried và Overload</strong>
 <dt>Override</dt>
   <dd>-Thay đổi hành vi hiện tại của phương thức.</dd>
   <dd>-Thể hiện tính đa hình tại run time.</dd>
@@ -41,7 +41,7 @@ class NguoiLon extends ConNguoi<br>
   <dd>-Kiểu trả về có thể khác nhau.</dd>
   <dd>-Xảy ra trong phạm vi cùng 1 class.</dd>
 </dl>
-<dl>Constructor
+<dl><strong>Constructor</str
   <dt>+là một phương thức đặc biệt, được thực thi ngay khi tạo ra đối tượng. Nó thường được sử dụng để khởi tạo các chức năng như gán thuộc tính với giá trị hay tạo ra các đối tượng khác từ đối tượng vừa tạo.</dt>
   <dd>VD: class demo<br>
 {
