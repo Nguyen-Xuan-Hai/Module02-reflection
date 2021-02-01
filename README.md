@@ -16,7 +16,8 @@ Bài 6 - Reflection
   <dd>-Một class có thể thực hiện nhiều interface</dd>
   <dd>-Interface có thẻ kế thừa lẫn nhau</dd>
 </dl>
-***
+###
+***<br>
 Ngày 29/01/2021<br>
 Bài 5 - Reflection <br>
 <dl>-<strong>Từ khóa final</strong>
@@ -69,6 +70,7 @@ class NguoiLon extends ConNguoi<br>
   <dt>-Khi nào thì lớp cha không cho phép lớp con kế thừa các thuộc tính và phương thức.</dt>
   <dd>+Khi lớp cha khai báo mức độ truy xuất là private</dd>
 </dl>
+###
 ***<br>
 Ngày 28/01/2021 <br>
 Bài 4 - Reflection<br>
