@@ -1,5 +1,21 @@
 # Module02-reflection
-BTVN 26/01 Login file: Login.php,Login_welcome
+***
+Ngày 01/02/2021<br>
+Bài 6 - Reflection
+<dl>Abstract class và class thường
+  <dt>Giống nhau:</dt>
+  <dd>-Đều là class</dd>
+  <dd>-Có thể chứa thuộc tính, phương thức</dd>
+  <dt>Khác nhau:</dt>
+  <dd>-Abstract class có tính trừu tượng rất cao, không thể tạo được các đối tượng của lớp đó.</dd>
+  <dd>-Phương thức được khai báo nhưng không có phần thân,ngoài ra nó còn có thể có thuộc tính và phương thức bình thường</dd>
+  <dd>-Lớp bình thường kế thừa lớp abstract thì phải triển khai tất cả phương thức abstract</dd>
+</dl>
+<dl>Interface
+<dt>là một chức năng mà bạn có thể thêm và bất kì class nào. Từ chức năng ở đây không đồng nghĩa với phương thức (hoặc hàm). Interface có thể bao gồm nhiều hàm/phương thức và tất cả chúng cùng phục vụ cho một chức năng.</dt>
+  <dd>-Một class có thể thực hiện nhiều interface</dd>
+  <dd>-Interface có thẻ kế thừa lẫn nhau</dd>
+</dl>
 ***
 Ngày 29/01/2021<br>
 Bài 5 - Reflection <br>
