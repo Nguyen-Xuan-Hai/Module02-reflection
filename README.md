@@ -53,7 +53,7 @@ class NguoiLon extends ConNguoi<br>
   <dt>-Khi nào thì lớp cha không cho phép lớp con kế thừa các thuộc tính và phương thức.</dt>
   <dd>+Khi lớp cha khai báo mức độ truy xuất là private</dd>
 </dl>
-***
+***<br>
 Ngày 28/01/2021 <br>
 Bài 4 - Reflection<br>
 <dl>
