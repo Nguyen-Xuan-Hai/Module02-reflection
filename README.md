@@ -1,5 +1,46 @@
 # Module02-reflection
 ***
+Ngày 02/02/2021<br>
+Bài 7 - Reflection
+<dl>SOLID là gì
+<dt>-S : Single responsibility priciple</dt>
+  <dd>+ý nghĩa là một class chỉ nên giữ một trách nhiệm duy nhất. Một class có quá nhiều chức năng sẽ trở nên cồng kềnh và trở nên khó đọc, khó maintain</dd>
+  <dt>-O :Open/Closed principle</dt>
+  <dd>+Không được sửa đổi một Class có sẵn, nhưng có thể mở rộng bằng kế thừa.</dd>
+  <dt>-L :Liskov substitution principle</dt>
+  <dd>+Các đối tượng (instance) kiểu class con có thể thay thế các đối tượng kiểu class cha mà không gây ra lỗi.</dd>
+  <dt>-I :Interface segregation principle</dt>
+  <dd>+Thay vì dùng 1 interface lớn, ta nên tách thành nhiều interface nhỏ, với nhiều mục đích cụ thể.</dd>
+  <dt>-D :Dependency inversion principle</dt>
+  <dd>+Các module cấp cao không nên phụ thuộc vào các modules cấp thấp. Cả 2 nên phụ thuộc vào abstraction.</dd>
+  <dd>+Interface (abstraction) không nên phụ thuộc vào chi tiết, mà ngược lại (Các class giao tiếp với nhau thông qua interface (abstraction), không phải thông qua implementation.)</dd>
+</dl><br>
+<dl>
+  <dt>-Các cách thực hành clean code</dt>
+  <dd>+Sử dụng tên biến có ý nghĩa và dễ hiểu</dd>
+  <dd>+Sử dụng cùng từ vựng cho cùng một loại biến</dd>
+  <dd>+Đặt tên sao cho dễ tìm kiếm</dd>
+  <dd>+Tránh lồng (nesting) quá nhiều và nên return sớm</dd>
+  <dd>+Tránh hack não người đọc</dd>
+  <dd>+Đừng thêm những nội dung không cần thiết</dd>
+  <dd>+Sử dụng đối số mặc định thay vì phải kiểm tra bằng biểu thức điều kiện</dd>
+  <dd>+Đối số của hàm (ít hơn hoặc bằng 2 là lý tưởng)</dd>
+  <dd>+Hàm chỉ thực hiện một chức năng</dd>
+  <dd>+Tên hàm nên thể hiện chức năng của hàm</dd>
+  <dd>+Hàm chỉ nên có độ trừu tượng một cấp</dd>
+  <dd>+Đừng sử dụng cờ như là một đối số của hàm</dd>
+  <dd>+Đừng viết hàm global</dd>
+  <dd>+Đừng sử dụng Singleton pattern</dd>
+  <dd>+Đóng gói điều kiện</dd>
+  <dd>+Tránh điều kiện phủ định</dd>
+  <dd>+Xóa dead code</dd>
+  <dd>+Sử dụng đối tượng đóng gói</dd>
+  <dd>+Ưu tiên thành phần hơn kế thừa</dd>
+  <dd>+Tránh viết fluent interfaces</dd>
+  <dd>+Tuân thủ SOLID</dd>
+  <dd>+Nguyên lý phân tách interface</dd>
+  <dl>
+***<br>
 Ngày 01/02/2021<br>
 Bài 6 - Reflection
 <dl>Abstract class và class thường
