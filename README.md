@@ -1,5 +1,64 @@
 # Module02-reflection
 ***
+Ngày 02/03/2021<br>
+Bài 8 - Reflection
+<dl>
+<dt>-Cấu trúc dữ liệu là hình thức tổ chức một nhóm dữ liệu bao gồm các chức năng:</dt>
+  <dd>+Lưu trữ dữ liệu</dd>
+  <dd>+Cung cấp các phương thức để thao tác với dữ liệu.</dd>
+  <dt>-Các cấu trúc dữ liệu thông dụng</dt>
+  <dd>Set (Tập hợp): Nhóm các phần tử không trùng nhau</dd>
+  <dd>List (Danh sách): Nhóm ác phần tử có thể trùng nhau</dd>
+  <dd>Stack: Nhóm các phần tử theo trật tự first-in/last-out (vào trước/ra sau)</dd>
+  <dd>Queue: Nhóm các phần tử theo trật tự first-in/first-out (vào trước/ra trước)</dd>
+  <dd>Map (Bản đồ): Lưu trữ các cặp key/value</dd>
+  <dd>Tree (Cây): Lưu trữ các phần tử theo mối quan hệ cha-con</dd>
+  <dd>Graph (Đồ thị): Lưu trữ các phần tử theo mối quan hệ mạng lưới</dd>
+</dl>
+<dl> ArrayList
+<dt>-Mảng có thể lưu giữ một số phần tử cố định và các phần tử này nền có cùng kiểu.</dt>
+  <dt>-Ưu điểm</dt>
+  <dd>+Truy câp phàn tử vơi thời gian hằng số O(1)</dd>
+  <dd>+Sử dụng bộ nhớ hiệu quả</dd>
+  <dd>+Tính cục bộ về bộ nhớ</dd>
+  <dt>-Nhược điểm</dt>
+  <dd>+Không thể thay đổi kích thước của mảng khi chương trình dang thực hiện</dd>
+  <dt>-Phép toán cơ bản được hỗ trợ bởi mảng</dt>
+  <dd>+Duyệt: In tất cả các phần tử mảng theo cách in từng phần tử một.</dd>
+  <dd>+Chèn: Thêm một phần tử vào mảng tại chỉ mục đã cho.</dd>
+  <dd>+Xóa: Xóa một phần tử từ mảng tại chỉ mục đã cho.</dd>
+  <dd>+Tìm kiếm: Tìm kiếm một phần tử bởi sử dụng chỉ mục hay bởi giá trị.</dd>
+  <dd>+Cập nhật: Cập nhật giá trị một phần tử tại chỉ mục nào đó.</dd>
+</dl>
+<dl>Linked List
+<dt>-Danh sách liên kết là một cấu trúc dữ liệu bao gồm một nhóm các nút (node) tạo thành một chuỗi. Mỗi nút gồm dữ liệu ở nút đó và tham chiếu đến nút kế tiếp trong chuỗi.</dt>
+  <dt>-Các loại Danh sách liên kết (Linked List)</dt>
+  <dd>+Danh sách liên kết đơn (Simple Linked List): chỉ duyệt các phần tử theo chiều về trước.</dd>
+  <dd>+Danh sách liên kết đôi (Doubly Linked List): các phần tử có thể được duyệt theo chiều về trước hoặc về sau.</dd>
+  <dd>+Danh sách liên kết vòng (Circular Linked List): phần tử cuối cùng chứa link của phần tử đầu tiên như là next và phần tử đầu tiên có link tới phần tử cuối cùng như là prev.</dd>
+  <dt>-Các hoạt động cơ bản trên Danh sách liên kết</dt>
+  <dd>+Hoạt động chèn: thêm một phần tử vào đầu danh sách liên kết.</dd>
+  <dd>+Hoạt động xóa (phần tử đầu): xóa một phần tử tại đầu danh sách liên kết.</dd>
+  <dd>+Hiển thị: hiển thị toàn bộ danh sách.</dd>
+  <dd>+Hoạt động tìm kiếm: tìm kiếm phần tử bởi sử dụng khóa (key) đã cung cấp.</dd>
+  <dd>+Hoạt động xóa (bởi sử dụng khóa): xóa một phần tử bởi sử dụng khóa (key) đã cung cấp.</dd>
+  <dt>-Danh sách liên kết đôi (Doubly Linked List) : hoạt động duyệt qua các nút có thể được thực hiện theo hai chiều: về trước và về sau một cách dễ dàng khi so sánh với Danh sách liên kết đơn. </dt>
+  <dt>-Các hoạt động cơ bản trên Danh sách liên kết đôi</dt>
+  <dd>+Hoạt động chèn: thêm một phần tử vào vị trí đầu của Danh sách liên kết.</dd>
+  <dd>+Hoạt động xóa: xóa một phần tử tại vị trí đầu của Danh sách liên kết.</dd>
+  <dd>+Hoạt động chèn vào cuối: thêm một phần tử vào vị trí cuối của Danh sách liên kết.</dd>
+  <dd>+Hoạt động xóa phần tử cuối: xóa một phần tử tại vị trí cuối của Danh sách liên kết.</dd>
+  <dd>+Hoạt động chèn vào sau: thêm một phần tử vào sau một phần tử của Danh sách liên kết.</dd>
+  <dd>+Hoạt động xóa (bởi key): xóa một phần tử từ Danh sách liên kết bởi sử dụng khóa đã cung cấp.</dd>
+  <dd>+Hiển thị danh sách về phía trước: hiển thị toàn bộ Danh sách liên kết theo chiều về phía trước.</dd>
+  <dd>+Hiển thị danh sách về phía sau: hiển thị toàn bộ Danh sách liên kết theo chiều về phía sau.</dd>
+  <dt>-Danh sách liên kết vòng (Circular Linked List) là phần tử đầu tiên trỏ tới phần tử cuối cùng và phần tử cuối cùng trỏ tới phần tử đầu tiên</dt>
+  <dt>-Các hoạt động cơ bản trên Danh sách liên kết vòng</dt>
+  <dd>+Hoạt động chèn: chèn một phần tử vào vị trí bắt đầu của Danh sách liên kết vòng.</dd>
+  <dd>+Hoạt động xóa: xóa một phần tử của Danh sách liên kết vòng.</dd>
+  <dd>+Hiển thị: hiển thị toàn bộ Danh sách liên kết vòng.</dd>
+</dl>
+***<br>
 Ngày 02/02/2021<br>
 Bài 7 - Reflection
 <dl>SOLID là gì
