@@ -1,5 +1,32 @@
 # Module02-reflection
 ***
+Bài 10 - Reflection
+<dl>
+<dt>SPL là bộ thư viên chuẩn của PHP, nó gồm tập hợp các interface, abstract class nhằm giải quyết các bài toán phổ biên.</dt>
+  <dd>-Các thành phần của SPL</dd>
+  <dd>+Predefined Constants là danh sách các hằng số :số pi, số E,...</dd>
+  <dd>+Datastructures chứa danh sách các lớp co khả năng làm việc với cấu trúc, dữ liệu khác nhau LinkList, Stack, Queue, Heaps,...</dd>
+  <dd>+Interator: Chứa các lớp cho phép có khả năng thực hiện các phép lặp để duyệt các cấu trúc khác nhau tùy vào cấu trúc dữ liệu.</dd>
+  <dd>+Danh sách các Interface</dd>
+  <dd>+Exception là danh sách điều khiển các lớp ngoại lệ</dd>
+  <dd>+File Handling cung cấp các lớp làm việc với file trong hệ thống.</dd>
+  <dd>+SPL Funtions cung cấp các hàm hỗ trợ cần thiết.</dd>
+  <dd>+Miscellaneous Classes và Interface.</dd>
+</dl>
+<dl>Các loại cấu trúc dữ liệu: -PHP DATASTRUCTURES
+<dt>-DoublyLinkedList:</dt>
+  <dd>+Là một danh sách liên kết đôi, các node được liên kết với nhau theo hai hướng.</dd>
+  <dd>+PHP cung cấp sẵn các lớp SplDoublyLinkedList là SplStack và SplQueue</dd>
+  <dt>-HEAP là một dạng cấu trúc gần như Tree, trong đó mỗi node có giá trị lớn hơn hoặc bằng các node con của nó.</dt>
+  <dd>+PHP cung cấp sẵn các lớp thuộc Heaps bao gồm SplHeap và SplPriorityQueue.Trong SplHeap có SplMaxHeap và SplMinHeap</dd>
+  <dt>-ARRAYS là cấu trúc dữ liệu trong đó lưu trữ các phần tử theo hình thức liên tiếp nhau , truy cập dựa theo chỉ số.</dt>
+  <dd>+PHP cung cấp lớp có sẵn SplFixedArray</dd>
+  <dd>+Lưu ý cấu trúc Arrays khác khái niệm mảng trong PHP.Mảng trong PHP được triển khai theo hình thức Hashtable có trật tự.</dd>
+  <dt>-MAP là cấu trúc dữ liệu trong đó các phần tử được quản lý theo cặp key-value.</dt>
+  <dd>+PHP cung cấp lớp SplObjectStorage</dd>
+  <dd>+Mảng trong PHP cũng có thể coi là cấu trúc Map.Trong đó key có kiểu dữ liệu là int hoặc string.</dd>
+</dl>
+***<br>
 Ngày 04/02/2021<br>
 Bài 9 - Reflection
 <dl>
