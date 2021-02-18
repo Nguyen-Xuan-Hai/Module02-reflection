@@ -1,5 +1,102 @@
 # Module02-reflection
 ***
+Ngày 18-02-2021<br>
+Bài 12 - Reflection
+<dl>
+ <dt>-Thuật toán sắp xếp</dt>
+  <dd>+Sắp xếp (sorting) là quá trình bố trí lại các phần tử của một danh sách các đối tương nào đó theo một trật tự nhất định. Chẳng hạn tứ tự tăng dần (hay giảm dần) đối với một dãy số, thứ tự từ điển đối với một dãy chữ...</dd>
+  <dt>-Giải thuật sắp xếp In-place và Not-in-place</dt>
+  <dd>+Những giải thuật mà không yêu cầu thêm bất kỳ bộ nhớ phụ và việc sắp xếp được tiến hành trong chính phần bộ nhớ đã khai báo trước đó (ví dụ trong một mảng chẳng hạn) thì được gọi là in-place sorting. Ví dụ cho loại giải thuật sắp xếp này là giải thuật sắp xếp nổi bọt (bubble sorting).</dd>
+  <dd>+Nhưng trong một số giải thuật sắp xếp, chương trình cần thêm lượng bộ nhớ mà có thể lớn hơn hoặc bằng với số phần tử đang được sắp xếp. Các giải thuật này được gọi là not-in-place sorting. Ví dụ cho loại giải thuật này là sắp xếp trộn (merge sort).</dd>
+  <dt>-Giải thuật sắp xếp Adaptive và Non-Adaptive</dt>
+  <dd>+Một giải thuật được xem như là adaptive, nếu nó tận dụng các phần tử đã được sắp xếp trong danh sách mà đã được sắp xếp. Đó là, trong khi sắp xếp nếu danh sách ban đầu có một số phần tử đã được sắp xếp, thì giải thuật dạng adaptive sẽ ghi nhận các phần tử này và sẽ cố gắng không thay đổi thứ tự của chúng.</dd>
+  <dd>+Trái ngược với loại giải thuật trên, giải thuật dạng non-adaptive sẽ không ghi nhận các phần tử đã được sắp xếp trước đó. Giải thuật loại này sẽ vấn cố gắng sắp xếp lại từng phần tử trong danh sách ban đầu.</dd>
+  <dt>-Các khái niệm quan trọng trong giải thuật sắp xếp</dt>
+  <dd>+Thứ tự tăng</dd>
+  <dd>+Thứ tự giảm</dd>
+  <dd>+Thứ tự không tăng</dd>
+  <dd>+Thứ tự không giảm</dd>
+  <dt>-Sắp xếp nổi bọt (Bubble Sort)</dt>
+  <dd>+Sắp xếp nổi bọt là một giải thuật sắp xếp đơn giản. Giải thuật sắp xếp này được tiến hành dựa trên việc so sánh cặp phần tử liền kề nhau và tráo đổi thứ tự nếu chúng không theo thứ tự.</dd>
+  <dd>+Giải thuật này không thích hợp sử dụng với các tập dữ liệu lớn khi mà độ phức tạp trường hợp xấu nhất và trường hợp trung bình là Ο(n2) với n là số phần tử.</dd>
+  <dd>Vd:</dd>
+  <dd><pre>Bắt đầu hàm bubbleSort( list : mảng các phần tử )
+
+   loop = list.count;
+   
+   for i = 0 tới loop-1 thực hiện:
+      swapped = false
+		
+      for j = 0 tới loop-1 thực hiện:
+      
+         /* so sánh các phần tử cạnh nhau */   
+         if list[j] > list[j+1] then
+            /* tráo đổi chúng */
+            swap( list[j], list[j+1] )		 
+            swapped = true
+         kết thúc if
+         
+      kết thúc for
+      
+      /*Nếu không cần tráo đổi phần tử nào nữa thì 
+      tức là mảng đã được sắp xếp. Thoát khỏi vòng lặp.*/
+      
+      if(not swapped) then
+         break
+      kết thúc if
+      
+   kết thúc for
+   
+Kết thúc hàm return list</pre></dd>
+<dt>-Sắp xếp chèn (Insertion Sort)</dt>
+<dd>+Sắp xếp chèn là một giải thuật sắp xếp dựa trên so sánh in-place. Ở đây, một danh sách con luôn luôn được duy trì dưới dạng đã qua sắp xếp. Sắp xếp chèn là chèn thêm một phần tử vào danh sách con đã qua sắp xếp. Phần tử được chèn vào vị trí thích hợp sao cho vẫn đảm bảo rằng danh sách con đó vẫn sắp theo thứ tự.</dd>
+<dd>+Với cấu trúc dữ liệu mảng, chúng ta tưởng tượng là: mảng gồm hai phần: một danh sách con đã được sắp xếp và phần khác là các phần tử không có thứ tự. Giải thuật sắp xếp chèn sẽ thực hiện việc tìm kiếm liên tiếp qua mảng đó, và các phần tử không có thứ tự sẽ được di chuyển và được chèn vào vị trí thích hợp trong danh sách con (của cùng mảng đó).</dd>
+<dd>+Giải thuật này không thích hợp sử dụng với các tập dữ liệu lớn khi độ phức tạp trường hợp xấu nhất và trường hợp trung bình là Ο(n2) với n là số phần tử.</dd>
+<dd>VD:</dd>
+<dd><pre>function insertion_Sort($my_array)
+{
+    for($i=0;$i<count($my_array);$i++){
+        $val = $my_array[$i];
+        $j = $i-1;
+        while($j>=0 && $my_array[$j] > $val){
+            $my_array[$j+1] = $my_array[$j];
+            $j--;
+        }
+        $my_array[$j+1] = $val;
+    }
+    return $my_array;
+}</pre></dd>
+  <dt>-Giải thuật sắp xếp chọn (Selection Sort)</dt>
+  <dd>+Giải thuật sắp xếp này là một giải thuật dựa trên việc so sánh in-place, trong đó danh sách được chia thành hai phần, phần được sắp xếp (sorted list) ở bên trái và phần chưa được sắp xếp (unsorted list) ở bên phải. Ban đầu, phần được sắp xếp là trống và phần chưa được sắp xếp là toàn bộ danh sách ban đầu.</dd>
+  <dd>+Phần tử nhỏ nhất được lựa chọn từ mảng chưa được sắp xếp và được tráo đổi với phần bên trái nhất và phần tử đó trở thành phần tử của mảng được sắp xếp. Tiến trình này tiếp tục cho tới khi toàn bộ từng phần tử trong mảng chưa được sắp xếp đều được di chuyển sang mảng đã được sắp xếp.</dd>
+  <dd>+Giải thuật này không phù hợp với tập dữ liệu lớn khi mà độ phức tạp trường hợp xấu nhất và trường hợp trung bình là O(n2) với n là số phần tử.</dd>
+  <dd>VD:</dd>
+  <dd><pre>Bắt đầu giải thuật sắp xếp chọn (Selection Sort) 
+   list  : mảng các phần tử
+   n     : kích cỡ mảng
+
+   for i = 1 tới n - 1
+   /* thiết lập phần tử hiện tại là min*/
+      min = i    
+  
+      /* kiểm tra phần tử có là nhỏ nhất không */
+
+      for j = i+1 tới n 
+         if list[j] < list[min] thì
+            min = j;
+         kết thúc if
+      kết thúc for
+
+      /* tráo đổi phần tử nhỏ nhất với phần tử hiện tại*/
+      if indexMin != i  then
+         tráo đổi list[min] và list[i]
+      kết thúc if
+
+   kết thúc for
+	
+Kết thúc giải thuật</pre></dd>
+</dl>
+***<br>
 Ngày 18-02-2021 <br>
 Bài 11 - Reflection
 <dl>
