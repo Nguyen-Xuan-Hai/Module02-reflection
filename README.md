@@ -1,5 +1,38 @@
 # Module02-reflection
 ***
+Bài 11 - Reflection
+<dl>
+<dt>-Thuật toán tìm kiếm tuyến tính</dt>
+  <dd>+Linear Search là một giải thuật tìm kiếm rất cơ bản. Trong kiểu tìm kiếm này, một hoạt động tìm kiếm liên tiếp được diễn ra qua tất cả từng phần tử. Mỗi phần tử đều được kiểm tra và nếu tìm thấy bất kỳ kết nối nào thì phần tử cụ thể đó được trả về; nếu không tìm thấy thì quá trình tìm kiếm tiếp tục diễn ra cho tới khi tìm kiếm hết dữ liệu.</dd>
+  <dt>Vd:</dt>
+  <dd><pre>$numbers = range(1, 200, 5);
+
+if (search($numbers, 31)) { 
+    echo "Found"; 
+} else { 
+    echo "Not found"; 
+}</pre>
+</dd>
+<dt>-Thuật toán tìm kiếm nhị phân</dt>
+<dd>+Binary Search tìm kiếm một phần tử cụ thể bằng cách so sánh phần tử tại vị trí giữa nhất của tập dữ liệu. Nếu giá trị trùng nhau thì chỉ mục của phần tử được trả về. Nếu phần tử cần tìm là lớn hơn giá trị phần tử giữa thì phần tử cần tìm được tìm trong mảng con nằm ở bên phải phần tử giữa; nếu không thì sẽ tìm ở trong mảng con nằm ở bên trái phần tử giữa. Tiến trình sẽ tiếp tục như vậy trên mảng con cho tới khi tìm hết mọi phần tử trên mảng con này.</dd>
+<dt>Vd:</dt>
+<dd><pre>$numbers = range(1, 200, 5); 
+
+$number = 31;
+if (binarySearch($numbers, $number) !== FALSE) { 
+    echo "$number Found \n"; 
+} else { 
+    echo "$number Not found \n"; 
+} 
+
+$number = 500; 
+if (binarySearch($numbers, $number) !== FALSE) { 
+    echo "$number Found \n"; 
+} else { 
+    echo "$number Not found \n"; 
+}</pre> </dd>
+</dl>
+***<br>
 Ngày 05/02/2021<br>
 Bài 10 - Reflection
 <dl>
