@@ -1,5 +1,37 @@
 # Module02-reflection
 ***
+Ngày 22-02-2021<br>
+Bài 14 - Reflection
+<dl>
+<dt>-Chuỗi (String)</dt>
+<dd>+Chuỗi là một kiểu dữ liệu cơ bản trong PHP. Chuỗi là dãy liên tiếp các ký tự. Chuỗi mà không chứa ký tự thì được gọi là chuỗi rỗng.</dd>
+<dd>+Chuỗi được bao quanh bởi dấu nháy đơn (' ') hoặc dấu nháy kép (" "). Sau đây là một vài ví dụ về chuỗi hợp lệ trong PHP</dd>
+<dt>-Các hàm thao tác với chuỗi</dt>
+<dd>+strlen($string): hàm trả về độ dài chuỗi</dd>
+<dd>+str_word_count($string): hàm trả về số từ trong chuỗi</dd>
+<dd>+strrev($string): hàm đảo ngược chuỗi</dd>
+<dd>+strpos($string,$text): hàm tìm kiếm chuỗi $text trong chuỗi $string. Nếu tìm thấy, hàm trả về chỉ số ký tự đầu tiên tìm thấy của chuỗi. Nếu không tìm thấy, hàm trả về FALSE.</dd>
+<dd>+str_replace($find, $replace, $string): hàm tìm kiếm chuỗi $find, thay thế chuỗi đó bằng $replace trong chuỗi ban đầu $string</dd>
+<dd>+substr(string,start,length): Hàm này có tác dụng cắt chuỗi $string, bắt đầu ở vị trí $strat và có giới hạn $length</dd>
+<dt>-Regular Expression / Regex - Biểu thức chính quy</dt>
+<dd>+Biểu thức chính quy (Regular Expression)  thường được gọi là Regex hoặc RegExp. Là thuật toán khớp mẫu mạnh mẽ có thể được thực hiện trong một biểu thức. Nó giúp bạn trong tiết kiệm được rất nhiều thời gian khi xây dựng các trang web động.</dd>
+<dt>-Biểu thức chính quy là</dt>
+<dd>+Biểu thức chính quy là một nhóm các ký tự, ký hiệu nó được sử dụng để tìm kiếm văn bản (text).</dd>
+<dd>+Một biểu thức chính quy là một mẫu nó tương đồng quy luật với một chuỗi từ trái qua phải. Biểu thức chính quy tên tiếng anh là Regular Expression  thường gọi tắt là regex hoặc regexp</dd>
+<dd>+Trong lập trình nó được dùng với các hàm xử lý chuỗi, xử lý văn bản với các tác vụ cụ thể như: tìm và thay thế chuỗi, kiểm tra tính hợp lệ của dữ liệu, trích xuất chuỗi con từ một chuỗi ... </dd>
+<dt>-Tại sao lại sử dụng biểu thức chính quy</dt>
+<dd>+Biểu thức chính quy đơn giản hóa việc xác định các mẫu trong chuỗi dữ liệu bằng cách gọi một hàm duy nhất. Điều này giúp chúng ta tiết kiệm thời gian lập trình.</dd>
+<dd>+Khi xác thực đầu input của người dùng nhập vào như username, password, email, tên miền, số điện thoại, địa chỉ IP...</dd>
+<dd>+Highlight từ khóa trong kết quả tìm kiếm.</dd>
+<dd>+Khi tạo mẫu HTML tùy chỉnh. Biểu thức chính quy thông thường có thể được sử dụng để xác định các tag và thay thế chúng bằng dữ liệu thực tế.</dd>
+<dd>+Đặc biệt, sử dụng biểu thức chính quy tăng performance của chương trình rất nhiều lần.</dd>
+<dt>- Các hàm thao tác với Regular Expression trong PHP</dt>
+<dd>+Hàm preg_match() được dùng để kiểm tra, so khớp và lấy kết quả của việc so sánh chuỗi dựa vào biểu thức chính quy. Hàm trả về TRUE/FALSE. </dd>
+<dd>+preg_match_all() cũng tương tự hàm preg_match() ở trên , tuy nhiên hai hàm này khác nhau ở chỗ , hàm preg_match_all() sẽ trả về toàn bộ các giá trị được so sánh khớp, còn hàm preg_match() chỉ trả về giá trị đầu tiên được so sánh khớp.</dd>
+<dd>+Sử dụng hàm pre_split để chia nhỏ chuỗi thành mảng chứa các chuỗi con.</dd>
+<dd>+Hàm preg_replace dùng để tìm kiếm và thay thế một chuỗi nào đó khớp với đoạn Regular Expression truyền vào. </dd>
+</dl>
+***<br>
 Ngày 19-02-2021<br>
 Bài 13 - Reflection
 <dl>
