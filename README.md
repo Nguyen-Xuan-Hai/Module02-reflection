@@ -1,5 +1,83 @@
 # Module02-reflection
 ***
+Ngày 19-02-2021<br>
+Bài 13 - Reflection
+<dl>
+<dt>-Xử lý ngoại lệ</dt>
+<dd>+Xử lý ngoại lệ được sử dụng để thay đổi luồng chương trình khi xảy ra một lỗi bất thường mà người lập trình không kiểm soát được.</dd>
+<dd>VD:</dd>
+<dd>+Trạng thái code hiện tại được lưu.</dd>
+<dd>+Việc thực thi code sẽ chuyển sang một hàm xử lý ngoại lệ được xác định trước (tùy chỉnh).</dd>
+<dd>+Tùy thuộc vào tình huống, trình xử lý có thể tiếp tục thực hiện từ trạng thái mã đã lưu, chấm dứt thực thi tập lệnh hoặc tiếp tục tập lệnh từ một vị trí khác trong tập lệnh.</dd>
+<dt>-Các phương thức xử lý ngoại lệ trong PHP:</dt>
+<dd>+Sử dụng try, throw và catch.</dd>
+<dd>+Tạo lớp ngoại lệ tùy chỉnh.</dd>
+<dd>+Xử lý nhiều ngoại lệ.</dd>
+<dd>+Ném lại một ngoại lệ.</dd>
+<dd>+Thiết lập trình xử lý ngoại lệ cao cấp.</dd>
+<dt>-Sử dụng try, throw và catch</dt>
+<dd>+try - Một hàm sử dụng ngoại lệ phải ở trong khối "try". Nếu ngoại lệ không xảy ra, code sẽ tiếp tục như bình thường. Tuy nhiên, nếu ngoại lệ xảy ra, ngoại lệ bị "throw".</dd>
+<dd>+throw - Đây là cách bạn kích hoạt ngoại lệ. Mỗi "throw" phải có ít nhất một "try".</dd>
+<dd>+catch - Một khối "catch" bắt một ngoại lệ và tạo một đối tượng chứa thông tin ngoại lệ.</dd>
+<dd>VD:</dd>
+<dd><pre><?php
+//tạo hàm và throw một ngoại lệ
+function checkNum($number) {
+  if($number > 1) {
+    throw new Exception("Giá trị phải nhỏ hơn hoặc bằng 1.");
+  }
+  return true;
+}
+ 
+//kích hoạt ngoại lệ trong khối "try"
+try {
+  checkNum(2);
+  // nếu ngoại lệ được ném ra thì lệnh sau không được thực thi
+  echo 'Number nhỏ hơn hoặc bằng 1.';
+}
+ 
+//catch exception
+catch(Exception $e) {
+  echo 'Message: ' .$e->getMessage();
+}
+?></pre></dd>
+<dt>-Tạo một lớp ngoại lệ tùy chỉnh</dt>
+<dd>+Để tạo một trình xử lý ngoại lệ tùy chỉnh, bạn phải tạo một lớp đặc biệt với các hàm có thể được gọi khi một ngoại lệ xảy ra trong PHP. Lớp này phải được kế thừa lớp Exception.</dd>
+<dd>+Lớp ngoại lệ tùy chỉnh kế thừa các thuộc tính từ lớp Exception của PHP và bạn có thể thêm các hàm tùy chỉnh vào nó.</dd>
+<dd>VD:</dd>
+<dd><pre><?php
+class CustomException extends Exception {
+  public function errorMessage() {
+    //error message
+    $errorMsg = 'Error on line '.$this->getLine().' in '.$this->getFile()
+        .': <b>'.$this->getMessage().'</b> is not a valid E-Mail address';
+    return $errorMsg;
+  }
+}
+ 
+$email = "someone@example...com";
+ 
+try {
+  //check email hợp lệ
+  if(filter_var($email, FILTER_VALIDATE_EMAIL) === FALSE) {
+    //throw exception nếu email không hợp lệ
+    throw new customException($email);
+  }
+}
+ 
+catch (customException $e) {
+  //hiển thị message
+  echo $e->errorMessage();
+}
+?></pre></dd>
+<dd>+Lớp mới là một bản sao của lớp Exception cũ với việc bổ sung hàm errorMessage(). Vì nó là một bản sao của lớp cũ, và nó kế thừa các thuộc tính và phương thức từ lớp cũ, chúng ta có thể sử dụng các phương thức lớp Exception như getLine() và getFile() và getMessage().</dd>
+<dt>-Quy tắc cho trường hợp ngoại lệ</dt>
+<dd>+Code nên được đặt trong khối try, để giúp bắt (catch) các ngoại lệ có thể xảy ra.</dd>
+<dd>+Mỗi khối try hoặc "throw" phải có ít nhất một khối catch tương ứng.</dd>
+<dd>+Nhiều khối catch có thể được sử dụng để bắt các lớp ngoại lệ khác nhau.</dd>
+<dd>+Có thể ném các ngoại lệ (hoặc được ném lại) vào khối catch trong khối try.</dd>
+</dl>
+***<br>
 Ngày 18-02-2021<br>
 Bài 12 - Reflection
 <dl>
