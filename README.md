@@ -1,5 +1,27 @@
 # Module02-reflection
 ***
+Ngày 23-02-2021<br>
+Bài 15 - Reflection
+<dl>
+<dt>-Định nghĩa của DBMS</dt>
+<dd>+DBMS (Hệ thống quản lý cơ sở dữ liệu) bao gồm một nhóm các dữ liệu liên quan và sự kết hợp của các chương trình để truy cập, duy trì và sử dụng cơ sở dữ liệu. Một cơ sở dữ liệu có thể được định nghĩa là một tập hợp dữ liệu có trật tự được liên kết theo một cách quan trọng, có thể được truy xuất theo các thứ tự logic khác nhau. Trong DBMS các tệp có liên quan đến nhau.</dd>
+<dd>+DBMS không phải là phần mềm ứng dụng cụ thể; trong thực tế, nó là một phần mềm có mục đích chung. Nó nhấn mạnh vào việc lưu trữ và truy cập dữ liệu. Nó cho phép một số người dùng nhập, chỉnh sửa, chia sẻ, hiển thị và thao tác dữ liệu trong cơ sở dữ liệu.</dd>
+<dd>+DBMS được phát triển từ hệ thống dựa trên tệp tiền thân của nó, trong đó một bộ các chương trình ứng dụng nhằm mục đích thực hiện các dịch vụ cho người dùng cuối. Mỗi chương trình xác định và quản lý dữ liệu riêng của mình có nghĩa là đối với mỗi cơ sở dữ liệu có một chương trình ứng dụng riêng.</dd>
+<dt>-Định nghĩa của RDBMS</dt>
+<dd>+RDBMS mở rộng tới Hệ thống quản lý cơ sở dữ liệu quan hệ . Nó tuân theo mô hình quan hệ trong đó dữ liệu được lưu trữ trong nhiều bảng và bảng có liên quan với nhau bằng các khóa. Theo Tiến sĩ EF Codd (người phát minh ra mô hình quan hệ), mọi cơ sở dữ liệu có các bảng và các ràng buộc cần phải là một cơ sở dữ liệu quan hệ.</dd>
+<dd>+Về cơ bản có ba phần cấu thành liên quan đến mô hình quan hệ - phần cấu trúc, tính toàn vẹn và phần thao tác. Phần Kết cấu xác định cơ sở dữ liệu dưới dạng quan hệ (bảng). Phần toàn vẹn duy trì tính toàn vẹn của mô hình quan hệ với sự trợ giúp của khóa chính và khóa ngoài. Phần thao tác sử dụng phép tính quan hệ và đại số quan hệ để thao tác cơ sở dữ liệu quan hệ. Để hiểu đại số quan hệ và tính toán quan hệ, hãy tham khảo bài viết trước đây - Sự khác biệt giữa Đại số quan hệ và Tính toán quan hệ.</dd>
+<dd>+Chuẩn hóa dữ liệu được sử dụng trong RDBMS để tránh dư thừa dữ liệu trong các bảng. SQL (Ngôn ngữ truy vấn có cấu trúc) được giới thiệu là ngôn ngữ tiêu chuẩn để truy cập RDBMS. Kỹ thuật chuẩn hóa giúp truy vấn SQL truy cập dữ liệu từ các bảng nhanh hơn DBMS. RDBMS là mô hình cơ sở dữ liệu được sử dụng rộng rãi trong đó một lượng dữ liệu phức tạp và lớn có thể dễ dàng lưu trữ và truy cập.</dd>
+<dt>-Sự khác biệt chính giữa DBMS và RDBMS</dt>
+<dd>+DBMS theo mô hình điều hướng trong khi RDBMS theo mô hình quan hệ nơi dữ liệu được lưu trữ dưới dạng bảng và tồn tại mối quan hệ giữa các bảng đó.</dd>
+<dd>+Trong DBMS, các bản sao dữ liệu giống nhau có thể được lưu trữ ở nhiều nơi nhưng trong RDBMS dữ liệu dư thừa được loại bỏ bằng cách sử dụng chuẩn hóa.</dd>
+<dd>+Vì nhiều bản sao được lưu trữ tại các vị trí khác nhau trong DBMS, rất khó để sửa đổi cùng một tệp tại các vị trí khác nhau. Mặt khác, vì có sự trùng lặp dữ liệu không đáng kể trong RDBMS, nên rất dễ để thực hiện các thay đổi trong dữ liệu.</dd>
+<dd>+Dữ liệu được truy cập nhanh hơn trong trường hợp RDBMS. Ngược lại, DBMS tiêu tốn nhiều thời gian hơn trong việc truy cập dữ liệu.</dd>
+<dd>+Chỉ các ràng buộc toàn vẹn được sử dụng trong DBMS trong khi RDBMS sử dụng các ràng buộc dựa trên lược đồ và phụ thuộc dữ liệu.</dd>
+<dd>+Các khóa và chỉ mục không được sử dụng trong DBMS. Ngược lại, trong RDBMS, chúng được sử dụng để thiết lập mối quan hệ giữa các bảng.</dd>
+<dd>+DBMS không áp đặt các ràng buộc đối với các thuộc tính ACID. Ngược lại, RDBMS áp đặt các ràng buộc để giữ các thuộc tính ACID.</dd>
+<dd>+Dbase, Microsoft Access, LibreOffice Base và ForPro là một số ví dụ về DBMS. Ngược lại, có một số RDBMS được sử dụng rộng rãi như SQL Server, Oracle, Mysql, SQLite, v.v.</dd>
+</dl>
+***<br>
 Ngày 22-02-2021<br>
 Bài 14 - Reflection
 <dl>
