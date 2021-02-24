@@ -1,5 +1,36 @@
 # Module02-reflection
 ***
+Ngày 24-02-2021<br>
+Bài 16 - Reflection
+<dl>
+<dt>- Đặc điểm của khóa chính (Primary key)</dt>
+<dd>+Giá trị của khóa chính là duy nhất cho mỗi record, nghĩa là không thể tồn tại hai record trùng khóa chính</dd>
+<dd>+Khóa chính không thể cho phép NULL</dd>
+<dd>+Mỗi bảng chỉ tồn tại duy nhất một khóa chính, mỗi khóa chính có thể có nhiều column</dd>
+<dd>+Để tạo kháo chính sử dụng câu lệnh PRIMARY KEY</dd>
+<dt>-Khóa ngoại (Foreign Key)</dt>
+<dd>+Trong hệ quản trị cơ sở dữ liệu MySQL, ràng buộc FOREIGN KEY (khóa ngoại) được dùng để xây dựng một mối liên kết giữa hai cái bảng nhằm đảm bảo tính "toàn vẹn dữ liệu" của các bảng (khi trong hai cái bảng đó có một cái bảng tham chiếu đến dữ liệu của cái bảng còn lại)</dd>
+<dd>+Để tạo khóa ngoại FOREIGN KEY (column1) REFERENCES table_name(column2)</dd>
+<dd>+Xóa khóa ngoại : ALTER TABLE table_name DROP FOREIGN KEY column</dd>
+<dt>-Các dạng chuẩn hóa</dt>
+<dd>+Dạng chuẩn 1: Một quan hệ R là dạng chuẩn 1(1NF) nếu các thuộc tính của nó đều đơn trị. Nói cách khác, quan hệ R đạt chuẩn 1 nếu nó ko chứa các thuộc tính lặp. Giá trị tại mỗi ô của bảng (giao của cột và dòng) phải là dơn trị</dd>
+<dd>+Dạng chuẩn 2: Một quan hệ R là dạng chuẩn 2(2NF) nếu nó là 1NF và các phụ thuộc hàm giữua các thuộc tính ngoài khóa và khóa đều là các phụ thuộc hàm sơ đẳng, nói cách khác, mọi thuộc tính ngoìa khóa đều ko có phụ thuộc hàm vào bộ phận của khóa.</dd>
+<dd>+Dạng chuẩn 3: Một quan hệ R là dạng chuẩn 3 (3NF) nếu nó là 2NF và các phụ thuộc hàm giữa các thuộc tính khóa ngoài và khóa đều là các phụ thuộc hàm trực tiếp-nghĩa là ko tồn tại những phụ thuộc hàm ngoài khóa.</dd>
+<dt>-Mối quan hệ trong MySql </dt>
+<dd>+Một-Nhiều : Hai thực thể A và B có mối Quan hệ 1- n nếu một thực thể kiểu A tương ứng với nhiều thực thể kiểu B và một thực thể của B chỉ tương ứng với một thực thể kiểu A:</dd>
+<dd>+Một - Một : Hai thực thể A và B có mối quan hệ 1-1 nếu một thực thể kiểu A tương ứng với một thực thể kiểu B và ngược lại:</dd>
+<dd>+Nhiều - Nhiều : Hai thực thể A và B có mối Quan hệ n-n nếu một thực thể kiểu A tương ứng với nhiều thực thể kiểu B và ngược lại</dd>
+<dt>-Các bước thiết kế cơ sở dữ liệu </dt>
+<dd>+Xác định mục đích của cơ sở dữ liệu</dd>
+<dd>+Tìm và sắp xếp thông tin cần thiết </dd>
+<dd>+Phân chia thông tin vào các bảng</dd>
+<dd>+Biến mục thông tin thành các cột   </dd>
+<dd>+Chỉ định khóa chính</dd>
+<dd>+Thiết lập mối quan hệ cho bảng</dd>
+<dd>+Tinh chỉnh thiết kế của bạn</dd>
+<dd>+Áp dụng các quy tắc chuẩn hóa</dd>
+</dl>
+***<br>
 Ngày 23-02-2021<br>
 Bài 15 - Reflection
 <dl>
