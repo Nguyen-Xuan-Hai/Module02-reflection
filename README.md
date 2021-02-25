@@ -1,5 +1,59 @@
 # Module02-reflection
 ***
+Ngày 25-02-2021<br>
+Bài 17 - Reflection
+<dl>
+<dt>-Toán tử AND là một toán tử logic kết hợp hai hay nhiều biểu thức Boolean và trả về true khi và chỉ khi cả hai biểu thức được đánh giá là true. Toán tử AND trả về false nếu một trong hai biểu thức kết hợp được đánh giá là sai.</dt>
+<dd>Vd: WHERE boolean_expression_1 AND boolean_expression_2</dd>
+<dd>+Toán tử AND thường được dùng trong mệnh đề WHERE của câu lệnh SELECT, UPDATE, DELETE để tạo điều kiện lọc tập kết quả trả về. Toán tử AND cũng được sử dụng trong điều kiện nối của mệnh đề JOIN.</dd>
+<dd>-Toán tử OR kết hợp hai hay nhiều biểu thức dạng boolean, chỉ cần một trong các điều kiện kết hợp là đúng thì kết quả là true. Vậy để sự kết hợp giữa các biểu thức trả về là sai thì tất cả các biểu thức kết hợp đều phải trả về sai.</dd>
+<dd>VD: VWHERE boolean_expression_1 OR boolean_expression_2</dd>
+<dt>-Mệnh đề INNER JOIN khớp các hàng trong một bảng với các hàng trong các bảng khác và cho phép bạn truy vấn các hàng có chứa các cột từ cả hai bảng. Nó cũng là một phần tùy chọn của câu lệnh SELECT, xuất hiện ngay sau mệnh đề FROM.</dt>
+<dd>-Trước khi sử dụng mệnh đề INNER JOIN, bạn phải xác định các tiêu chí sau:</dd>
+<dd>+Xác định bảng chính xuất hiện trong mệnh đề FROM.</dd>
+<dd>+Chỉ định bảng kết hợp với bản chính sẽ xuất hiện trong mệnh đề INNER JOIN.</dd>
+<dd>+Chỉ định điều kiện nối. Điều kiện nối xuất hiện sau từ khóa ON của mệnh đề INNER JOIN và là quy tắc để kết hợp các hàng giữa bảng chính và các bảng khác.</dd>
+<dt>-Mệnh đề LEFT JOIN cho phép bạn truy vấn dữ liệu từ hai hay nhiều bảng trong cơ sở dữ liệu. Mệnh đề này là một phần tùy chọn của câu lệnh SELECT, xuất hiện sau mệnh đề FROM.</dt>
+<dd>VD :</dd>
+<dd><pre>SELECT column_name(s) FROM t1 
+LEFT JOIN t2 
+ON t1.column_name = t2.column_name</pre></dd>
+<dt>-Khi một bảng được nối với chính nó gọi là SELF JOIN. Sử dụng SELF JOIN khi bạn muốn kết hợp các hàng với các hàng khác trong cùng một bảng. Để thực hiện các hoạt động tự gia nhập, bạn phải sử dụng một "bí danh bảng" để giúp phân biệt bảng bên trái từ bảng bên phải của cùng một bảng.</dt>
+<dd>VD :</dd>
+<dd><pre>SELECT column_name(s) FROM table1 t1, table1 t2 
+WHERE condition</pre></dd>
+<dt>-Mệnh đề WHERE trong SQL được sử dụng để chỉ định một điều kiện trong khi lấy dữ liệu từ một bảng hoặc bằng cách join với nhiều bảng. Nếu điều kiện thỏa mãn, thì nó trả về một giá trị cụ thể từ bảng. Bạn nên sử dụng mệnh đề WHERE để lọc các bản ghi và chỉ lấy các bản ghi cần thiết.</dt>
+<dd>VD:</dd>
+<dd><pre>SELECT column1, column2, columnN 
+FROM table_name
+WHERE [condition]</pre></dd>
+<dt>-Mệnh đề GROUP BY trong SQL được sử dụng hợp tác với câu lệnh SELECT để sắp xếp dữ liệu giống nhau thành các nhóm. Mệnh đề GROUP BY này tuân theo mệnh đề WHERE trong câu lệnh SELECT và đứng trước mệnh đề ORDER BY.</dt>
+<dd>VD :</dd>
+<dd><pre>SELECT column1, column2
+FROM table_name
+WHERE [ conditions ]
+GROUP BY column1, column2
+ORDER BY column1, column2</pre></dd>
+<dt>-Mệnh Full Join trong SQL là sự kết hợp các kết quả của cả hai phép nối Left Join và Right Join.</dt>
+<dd>Vd :</dd>
+<dd><pre>SELECT table1.column1, table2.column2...
+FROM table1
+FULL JOIN table2
+ON table1.common_field = table2.common_field;</pre></dd>
+<dt>-Mệnh đề UNION trong SQL được sử dụng để kết hợp các kết quả của hai hoặc nhiều câu lệnh SELECT mà không cần trả về bất kỳ hàng trùng lặp nào.</dt>
+<dd>-Để sử dụng mệnh đề UNION này, mỗi câu lệnh SELECT cần phải có</dd>
+<dd>+Cùng một số cột được chọn</dd>	
+<dd>+Cùng một số biểu thức cột</dd>
+<dd>+Cùng kiểu dữ liệu</dd>
+<dd>+Có chúng trong cùng một trật tự</dd>
+<dd>VD :</dd>
+<dd><pre>SELECT column1 [, column2 ]
+FROM table1 [, table2 ]
+[WHERE condition]UNIONSELECT column1 [, column2 ]
+FROM table1 [, table2 ]
+[WHERE condition]</pre></dd>
+</dl>
+***<br>
 Ngày 24-02-2021<br>
 Bài 16 - Reflection
 <dl>
