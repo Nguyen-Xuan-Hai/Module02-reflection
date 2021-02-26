@@ -1,5 +1,62 @@
 # Module02-reflection
 ***
+Ngày 26-02-2021<br>
+Bài 18 - Reflection
+<dl>
+<dt>-Hàm AVG() trả về giá trị trung bình của một cột kiểu số.</dt>
+<dd>VD:</dd>
+<dd><pre>SELECT AVG(column_name)
+FROM table_name
+WHERE condition;<pre></dd>
+<dt>-Hàm COUNT() trả về số lượng bản ghi thoả mãn điền kiện đưa ra.</dt>
+<dd>VD:</dd>
+<dd><pre>SELECT COUNT(column_name)
+FROM table_name
+WHERE condition;</pre></dd>
+<dt>-Hàm MAX() trả về giá trị lớn nhất trong một cột và thoả mãn điều kiện đưa ra.</dt>
+<dd>VD:</dd>
+<dd><pre>SELECT MAX(column_name)
+FROM table_name
+WHERE condition;</pre></dd>
+<dt>-Hàm MIN() trả về giá trị nhỏ nhất trong một cột và thoả mãn điều kiện đưa ra.</dt>
+<dd>Vd:</dd>
+<dd><pre>SELECT MIN(column_name)
+FROM table_name
+WHERE condition;</pre></dd>
+<dt>-Hàm SUM() trả về tổng giá trị của một cột kiểu số.</dt>
+<dd>VD:</dd>
+<dd><pre>SELECT SUM(column_name)
+FROM table_name
+WHERE condition;</pre></dd>
+<dt>-Hàm UCASE() chuyển giá trị của một trường sang chữ viết hoa.</dt>
+<dd>VD:</dd>
+<dd><pre>SELECT UCASE(column_name) FROM table_name;</pre></dd>
+<dt>-Hàm LCASE() chuyển giá trị của một trường sang chữ viết thường.</dt>
+<dd>VD:</dd>
+<dd><pre>SELECT LCASE(column_name) FROM table_name;</pre></dd>
+<dt>-Hàm LEN() trả về độ dài của chuỗi (số lượng ký tự) của một giá trị trong cột kiểu chuỗi</dt>
+<dd>VD:</dd>
+<dd><pre>SELECT LEN(column_name) FROM table_name;</pre></dd>
+<dt>-Hàm NOW() trả về ngày tháng và thời gian hiện tại.</dt>
+<dd>VD:</dd>
+<dd><pre>SELECT NOW() FROM table_name;</pre></dd>
+<dt>Mệnh đề GROUP BY thường được sử dụng cùng với các hàm như COUNT(), MAX(), MIN(), SUM(), AVG() để tách thành các nhóm con theo một cột (hoặc nhiều cột).</dt>
+<dd>VD:/dd>
+<dd><pre>SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+ORDER BY column_name(s);</pre></dd>
+<dt>-Mệnh đề HAVING có chức năng lọc dữ liệu như mệnh đề WHERE nhưng sử dụng cùng với các hàm SQL.</dt>
+<dd>VD:</dd>
+<dd><pre>SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+HAVING condition
+ORDER BY column_name(s);</pre></dd>
+</dl>
+***<br>
 Ngày 25-02-2021<br>
 Bài 17 - Reflection
 <dl>
