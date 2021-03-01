@@ -1,5 +1,49 @@
 # Module02-reflection
 ***
+Ngày 01-03-2021<br>
+Bài 19 - Reflection
+<dl>
+<dt>-Using Views : View là một loại bảng ảo cho phép người dùng thực hiện các thao tác sau</dt>
+<dd>+Cấu trúc dữ liệu theo cách mà người dùng tìm thấy tự nhiên hoặc trực quan.</dd>
+<dd>+Hạn chế quyền truy cập vào dữ liệu theo cách mà người dùng có thể nhìn thấy và (đôi khi) sửa đổi chính xác những gì họ cần.</dd>
+<dd>+Tóm tắt dữ liệu từ các bảng khác nhau có thể được sử dụng để tạo báo cáo.</dd>
+<dd>VD:</dd>
+<dd><pre>CREATE VIEW view_name AS
+
+SELECT column1, column2.....
+
+FROM table_name
+
+WHERE [condition];</pre></dd>
+<dt>-Chèn hàng vào view</dt>
+<dd>+Hàng dữ liệu có thể được chèn vào một view. Các quy tắc tương tự áp dụng cho lệnh UPDATE cũng áp dụng cho lệnh INSERT.</dt>
+<dt>-Xóa hàng khỏi view</dt>
+<dd>+Hàng dữ liệu có thể bị xóa khỏi view. Các quy tắc tương tự áp dụng cho các lệnh UPDATE và INSERT áp dụng cho lệnh DELETE.</dd>
+<dd>VD:</dd>
+<dd><pre>DELETE FROM CUSTOMERS_VIEW
+   WHERE age = 22;</pre></dd>
+<dt>-Xoá view</dt>
+<dd>+DROP VIEW view_name;</dd>
+<dt></dt>
+<dd></dd>
+<dd></dd>
+<dd></dd>
+<dd></dd>
+<dd></dd>
+<dd></dd>
+<dd></dd>
+<dd></dd>
+<dd></dd>
+<dd></dd>
+<dd></dd>
+<dd></dd>
+<dd></dd>
+<dd></dd>
+<dd></dd>
+<dd></dd>
+<dd></dd>
+</dl>
+***<br>
 Ngày 26-02-2021<br>
 Bài 18 - Reflection
 <dl>
