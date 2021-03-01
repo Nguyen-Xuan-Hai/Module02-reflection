@@ -24,24 +24,38 @@ WHERE [condition];</pre></dd>
    WHERE age = 22;</pre></dd>
 <dt>-Xoá view</dt>
 <dd>+DROP VIEW view_name;</dd>
-<dt></dt>
-<dd></dd>
-<dd></dd>
-<dd></dd>
-<dd></dd>
-<dd></dd>
-<dd></dd>
-<dd></dd>
-<dd></dd>
-<dd></dd>
-<dd></dd>
-<dd></dd>
-<dd></dd>
-<dd></dd>
-<dd></dd>
-<dd></dd>
-<dd></dd>
-<dd></dd>
+<dt>-Chỉ mục Index</dt>
+<dd>+Chỉ mục (Index) là bảng tra cứu đặc biệt mà Database Search Engine có thể sử dụng để tăng nhanh thời gian và hiệu suất thu thập dữ liệu. Hiểu đơn giản, một chỉ mục là một con trỏ tới dữ liệu trong một bảng. Một chỉ mục trong một Database là tương tự như một chỉ mục trong Mục lục của cuốn sách.</dd>
+<dt>-Khi nào cần đánh chỉm mục</dt>
+<dd>+Bất cứ khi nào bạn thay đổi cấu trúc bảng dữ liệu bạn đều cần Add Index lại, giống như khi bạn thay đổi nội dung quyển sách, bạn cần phải làm lại mục lục. Vậy hãy cân nhắc, nếu Database của bạn sử dụng INSERT hay UPDATE nhiều hơn là SELECT thì Index chỉ làm chậm thêm mà thôi.</dd>
+<dd>-Các loại Index trong MySql</dd>
+<dd>-B-Tree Index</dd>
+<dd>+Dữ liệu index trong B-Tree được tổ chức và lưu trữ theo dạng cây(tree), tức là có root, branch, leaf. Giá trị của các node được tổ chức tăng dần từ trái qua phải.</dd>
+<dd>+Khi truy vấn dữ liệu thì việc tìm kiếm trong B-Tree là 1 quá trình đệ quy, bắt đầu từ root node và tìm kiếm tới branch và leaf, đến khi tìm được tất cả dữ liệu - thỏa mãn với điều kiện truy vấn thì mới dùng lại.</dd>
+<dd>+B-Tree index được sử dụng cho những column trong bảng khi muốn tìm kiếm 1 giá trị nằm trong khoảng nào đó. Ví dụ: tìm kiếm những sinh viên có điểm Toán từ 5-9.</dd>
+<dd>-Hash Index</dd>
+<dd>+Hash index có một vài đặc điểm khác biệt so với Btree index.</dd>
+<dd>+Dữ liệu index được tổ chức theo dạng Key - Value được liên kết với nhau.</dd>
+<dd>+Khác với B-Tree, thì Hash index chỉ nên sử dụng trong các biểu thức toán tử là = và <>. Không sử dụng cho toán từ tìm kiếm 1 khoảng giá trị như > hay < .</dd>
+<dd>+Không thể tối ưu hóa toán tử ORDER BY bằng việc sử dụng Hash index bởi vì nó không thể tìm kiếm được phần từ tiếp theo trong Order.</dd>
+<dd>+Toàn bộ nội dung của Key được sử dụng để tìm kiếm giá trị records, khác với B-Tree một phần của node cũng có thể được sử dụng để tìm kiếm.</dd>
+<dd>+Hash có tốc độ nhanh hơn kiểu Btree.</dd>
+<dt>-Nên sử dụng loại Index nào </dt>
+<dd>+Việc chọn index theo kiểu B-Tree hay Hash ngoài yếu tố về mục đích sử dụng index thì nó còn phụ thuộc vào việc Storage Engine có hỗ trợ loại index đó hay không. Ví dụ MyISAM, InnoDB hay Archive chỉ hỗ trợ B-Tree, trong khi MyISAM lại hỗ trợ cho cả 2.</dd>
+<dt>-Lưu Ý :</dt>
+<dd>+Các chỉ mục không nên được sử dụng trong các bảng nhỏ.</dd>
+<dd>+Bảng mà thường xuyên có các hoạt động update, insert.</dd>
+<dd>+Các chỉ mục không nên được sử dụng trên các cột mà chứa một số lượng lớn giá trị NULL.</dd>
+<dd>+Không nên dùng chỉ mục trên các cột mà thường xuyên bị sửa đổi.</dd>
+<dt>-Store Procedure</dt>
+<dd>+Store Procedure (thủ tục lưu trữ), có thể được định nghĩa là chương trình con giống như một chương trình con được lưu trữ trong cơ sở dữ liệu. Trong ngữ cảnh của MySQL, nó là một phân đoạn các câu lệnh SQL khai báo được lưu trữ bên trong danh mục cơ sở dữ liệu. Sau đây là cú pháp để tạo một Store Procedure:</dd>
+<dd>VD:</dd>
+<dd><pre>Delimiter //
+Create Procedure allrecords()
+    BEGIN
+    Select * from Student_info;
+    END//
+DELIMITER ;</pre></dd>
 </dl>
 ***<br>
 Ngày 26-02-2021<br>
