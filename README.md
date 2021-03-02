@@ -11,7 +11,7 @@ VALUES (value1, value2, value3, ...)</pre></dd>
 <dd>VD:</dd>
 <dd><pre>UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition 
 </pre></dd>
-<dd>-Câu lệnh delete để xóa dữ liệu trong bảng.</dd>
+<dt>-Câu lệnh delete để xóa dữ liệu trong bảng.</dt>
 <dd>VD:</dd>
 <dd><pre>delete from table_name where condition</pre></dd>
 <dt>-Câu lệnh SELECT để hiện thị dữ liệu trong bảng. Dữ liệu trả về lưu trong bảng kết quả.</dt>
