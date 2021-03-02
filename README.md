@@ -1,5 +1,24 @@
 # Module02-reflection
 ***
+Ngày 02-03-2021<br>
+Bài 20 - Reflection
+<dl>
+<dt>-Câu lệnh INSERT INTO được sử dụng để chèn một bản ghi mới vào bảng. </dt>
+<dd>VD:</dd>
+<dd><pre>INSERT INTO table_name (column1, column2, column3, ...) 
+VALUES (value1, value2, value3, ...)</pre></dd>
+<dt>-Câu lệnh UPDATE để cập nhật lại dữ liệu trong bảng.</dt>
+<dd>VD:</dd>
+<dd><pre>UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition 
+</pre></dd>
+<dd>-Câu lệnh delete để xóa dữ liệu trong bảng.</dd>
+<dd>VD:</dd>
+<dd><pre>delete from table_name where condition</pre></dd>
+<dt>-Câu lệnh SELECT để hiện thị dữ liệu trong bảng. Dữ liệu trả về lưu trong bảng kết quả.</dt>
+<dd>VD:</dd>
+<dd><pre>select column1, column 2, ... from table_name</pre></dd>
+</dl>
+***<br>
 Ngày 01-03-2021<br>
 Bài 19 - Reflection
 <dl>
