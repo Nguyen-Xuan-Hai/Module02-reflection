@@ -1,5 +1,18 @@
 # Module02-reflection
 ***
+Ngày 03-03-2021<br>
+Bài 21 - Reflection
+<dl>
+<dt>-Mô hình MVC là mô hình được sử dụng rộng rãi nhất trong việc phát triển ứng dụng web. Mặc dù vậy, hiện nay mình thấy rất ít những hướng dẫn thực sự chuẩn và dễ hiểu về mô hình này, do vậy mình sẽ viết một vài chia sẻ về mô hình này.</dt>
+<dt>-Mô hình MVC là mô hình gồm 3 lớp: Model, View, Controller. Cụ thể như sau:</dt>
+<dd>+Model: Lớp này chịu trách nhiệm quản lí dữ liệu: giao tiếp với cơ sở dữ liệu, chịu trách nhiệm lưu trữ hoặc truy vấn dữ liệu.</dd>
+<dd>+View: Lớp này chính là giao diện của ứng dụng, chịu trách nhiệm biểu diễn dữ liệu của ứng dụng thành các dạng nhìn thấy được.</dd>
+<dd>+Controller: Lớp này đóng vai trò quản lí và điều phối luồng hoạt động của ứng dụng. Tầng này sẽ nhận request từ client, điều phối các Model và View để có thể cho ra output thích hợp và trả kết quả về cho người dung.</dd>
+<dt>-Ưu điểm :</dt>
+<dd>+Tách biệt Model và View, tạo sự linh hoạt khi thay đổi ứng dụng (giao diện, xử lí, …)</dd>
+<dd>+Tầng Model và View có thể thay đổi, chỉnh sửa 1 cách độc lập. Ta có thể tạo các ứng dụng giao tiếp thông minh hơn chỉ bằng cách thay đổi View, hoặc cũng có thể thay thế Database bằng các sử dụng Web service, …</dd>
+</dl>
+***<br>
 Ngày 02-03-2021<br>
 Bài 20 - Reflection
 <dl>
